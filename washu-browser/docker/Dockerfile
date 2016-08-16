@@ -24,6 +24,8 @@ RUN apt-get update && apt-get install -y \
 
 RUN a2enmod cgi
 
+# This was created and tested with commit
+# 403e8bcd7a42384235aea1569568585c07e4bf0b
 RUN git clone https://github.com/epgg/eg.git
 
 WORKDIR /eg/cgi-bin
